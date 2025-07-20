@@ -13,7 +13,7 @@ export default function MilhaXQuilometros() {
   const converteKmParaMi = (milhas) => {
    
     const resultado = parseFloat(milhas * 1.6);
-    setQuilometro(isNaN(resultado) ? 0 : resultado);
+    setQuilometro(isNaN(resultado) ? 0 : resultado.toFixed(2));
   };
 
   return(
